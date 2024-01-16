@@ -3,7 +3,7 @@ from typing import List, Optional
 
 from pydantic import BaseModel, Field
 
-from invoicing_tools.email.enums import EmailFormat
+from .enums import EmailFormat
 
 
 class SenderConfig(BaseModel):

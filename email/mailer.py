@@ -5,8 +5,8 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-from invoicing_tools.email.enums import EmailFormat
-from invoicing_tools.email.models import EmailMessage
+from .enums import EmailFormat
+from .models import EmailMessage
 
 
 def send_email(email_message: EmailMessage):
