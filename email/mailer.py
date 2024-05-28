@@ -10,6 +10,7 @@ from .schema import EmailMessage
 
 
 def send_email(email_message: EmailMessage):
+    """Send email message using SMTP."""
     # The mail addresses and password
     # Setup the MIME
     message = MIMEMultipart()
@@ -28,7 +29,6 @@ def send_email(email_message: EmailMessage):
             payload.set_payload(attach_file.read())
             encoders.encode_base64(payload)  # encode the attachment
             # add payload header with filename
-            # payload.add_header('Content-Decomposition', 'attachment', filename='invoices_20201101_1120.xlsx')
             fn = os.path.basename(attachment)
             payload.add_header(
                 "Content-Disposition",
