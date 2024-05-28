@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-mail"
+version = "0.1.0"
+description = ""
+authors = ["Luis C. Berrocal <luis.berrocal.1942@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.5"
+pytest = "^8.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

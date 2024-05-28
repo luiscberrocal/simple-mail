@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from .enums import EmailFormat
-from .models import EmailMessage
+from .schema import EmailMessage
 
 
 def send_email(email_message: EmailMessage):
