@@ -18,4 +18,3 @@ class EmailMessage(BaseModel):
     sender_config: SenderConfig = Field(description="Sender configuration")
     attachments: Optional[List[Path] | None]
     format: EmailFormat = Field(default=EmailFormat.TEXT)
-
